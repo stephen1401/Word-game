@@ -1,0 +1,33 @@
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: var(--black);
+  padding: 10px;
+  z-index: 1;
+}
+
+.bottom-item {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+}
+
+#typed-word {
+  padding: 0px 20px;
+  font-size: 1.7rem;
+  font-weight: 500;
+  background-color: #3f4361;
+  color: var(--white);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--yellow);
+  color: var(--blue);
+}

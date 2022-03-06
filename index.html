@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing game</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-bar">
+        <div class="top-item">
+          <h3>Correct</h3>
+        </div>
+        <div class="top-item">
+          <h3>WORDS</h3>
+        </div>
+        <div class="top-item">
+          <h3>Incorrect</h3>
+        </div>
+      </div>
+      <div class="middle">
+        <div class="middle-left"></div>
+        <div class="middle-center">
+          <div class="current-word">apple</div>
+        </div>
+        <div class="middle-right"></div>
+      </div>
+      <div class="bottom">
+        <div class="bottom-item"></div>
+        <div class="bottom-item">
+          <input
+            id="typed-word"
+            type="text"
+            autofocus
+            placeholder="type here..."
+          />
+          <div class="score-board">
+            <h1 id="score-count">0</h1>
+          </div>
+        </div>
+        <div class="bottom-item"></div>
+      </div>
+    </div>
+
+    <div class="modal modal-play">
+      <div class="modal-content">
+        <h1 class="">Typing game</h1>
+        <div class="keyboard-icon">⌨️</div>
+        <button id="btn-play">Start</button>
+      </div>
+    </div>
+
+    <div class="modal modal-play-again hide">
+      <div class="modal-content">
+        <h1 class="result-msg">You</h1>
+        <div class="result-icon">🏆</div>
+        <!-- <h3>Score : 10</h3> -->
+        <button id="btn-play-again">Play again</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

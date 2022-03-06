@@ -1,0 +1,93 @@
+@import url("./modal.css");
+@import url("./bottom.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+:root {
+  --black: #2b2d42;
+  --pink: #f0749c;
+  --white: #f7f7f9;
+  --green: #5941e2;
+  --yellow: #3b6398;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 65px auto 90px;
+}
+
+.top-bar {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.top-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.middle-center {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.current-word {
+  position: absolute;
+  background-color: var(--red);
+  color: var(--black);
+  border-radius: 25px;
+  padding: 10px 32px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.middle-left,
+.middle-right {
+  background-color: var(--white);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.correct-word {
+  background-color: var(--green);
+  color: var(--black);
+  border-radius: 5px;
+  padding: 10px 16px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.incorrect-word {
+  background-color: var(--blue);
+  color: var(--black);
+  border-radius: 5px;
+  padding: 10px 16px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
